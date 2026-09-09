@@ -392,6 +392,23 @@
 
       var state = { q: '', cat: 'all', sort: 'default' };
 
+      function cardMatchesQuery(card, q) {
+        if (!q) return true;
+        // Price-based shortcuts
+        var price = Number(card.getAttribute('data-price') || 0);
+        if (q === 'free' || q === 'freebie' || q === 'gratis') return price === 0;
+        if (q === 'paid' || q === 'premium' || q === 'buy') return price > 0;
+        // Flag filter
+        if (q === 'flagship' || q === 'featured' || q === 'best') {
+          return card.getAttribute('data-flagship') === '1';
+        }
+        // Free-text match: name, keywords, or visible description
+        var name = (card.getAttribute('data-name') || '').toLowerCase();
+        var kw = (card.getAttribute('data-keywords') || '').toLowerCase();
+        var desc = (card.querySelector('p') ? card.querySelector('p').textContent : '').toLowerCase();
+        return name.indexOf(q) !== -1 || kw.indexOf(q) !== -1 || desc.indexOf(q) !== -1;
+      }
+
       function apply() {
         var q = state.q.trim().toLowerCase();
         var visible = 0;
@@ -400,9 +417,7 @@
           var cards = sec.querySelectorAll('.card');
           var sectionHasMatch = false;
           cards.forEach(function(card) {
-            var name = (card.getAttribute('data-name') || '').toLowerCase();
-            var kw = (card.getAttribute('data-keywords') || '').toLowerCase();
-            var matchSearch = !q || name.indexOf(q) !== -1 || kw.indexOf(q) !== -1;
+            var matchSearch = cardMatchesQuery(card, q);
             var matchCat = state.cat === 'all' || secCat === state.cat;
             if (matchSearch && matchCat) {
               card.classList.remove('hide');
@@ -412,7 +427,6 @@
               card.classList.add('hide');
             }
           });
-          // Hide section entirely if no matching cards (and a filter is active)
           if (sectionHasMatch) {
             sec.style.display = '';
           } else {
