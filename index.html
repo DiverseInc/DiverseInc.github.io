@@ -4,23 +4,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diverse Industries Inc — Software &amp; AI Tools</title>
-<meta name="description" content="Diverse Industries Inc. — a catalog of practical software and AI tools built for real businesses: prompt studios, CRM platforms, real estate tools, blueprints and more.">
+<meta name="description" content="Diverse Industries Inc. — 28 live AI tools, prompt studios, broker platforms, real-estate apps, and blueprints. Search, sort, and buy what you need. Buy once, own forever.">
+<meta property="og:title" content="Diverse Industries Inc — Software & AI Tools">
+<meta property="og:description" content="28+ live AI tools for brokers, agents, and small business owners. Real-estate CRMs, prompt studios, deal analyzers, blueprints and more. Buy once, own it forever.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://store.diverseindustriesinc.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Diverse Industries Inc — Software & AI Tools">
+<meta name="twitter:description" content="28+ live AI tools for brokers, agents, and small business owners. Buy once, own it forever.">
+<link rel="canonical" href="https://store.diverseindustriesinc.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Diverse Industries Bundle",
+  "description": "28 working AI tools for real estate agents, brokers, mortgage officers, and small business owners. Includes DealFlow CRM, DealIQ Pro broker platform, PromptForge Pro, and 25 more apps. Buy once, own it forever.",
+  "url": "https://diverse-bundle.diverseindustriesinc.com",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser (any modern browser)",
+  "offers": {
+    "@type": "Offer",
+    "price": "297",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://diverseinc.gumroad.com/l/diverse-bundle-2026",
+    "priceValidUntil": "2027-12-31"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Diverse Industries Inc.",
+    "url": "https://diverseindustriesinc.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Diverse Industries Inc.",
+  "url": "https://diverseindustriesinc.com",
+  "logo": "https://diverseindustriesinc.com/assets/di-logo-nav.png",
+  "description": "Catalog of practical AI tools and business software for real estate, mortgage, and small business.",
+  "sameAs": [
+    "https://github.com/DiverseInc",
+    "https://diverseinc.gumroad.com"
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TBN3N8VEQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5TBN3N8VEQ');
+</script>
 <style>
   :root{
     --bg:#0b0f17; --bg2:#111827; --card:#151d2e; --card2:#1a2438;
     --txt:#e8edf6; --mut:#93a1b8; --acc:#f5b83d; --acc2:#ffd97a;
-    --good:#34d399; --line:#24304a;
+    --good:#34d399; --line:#24304a; --bad:#e53e3e;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
   a{color:var(--acc2);text-decoration:none}
   .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-  header{position:sticky;top:0;z-index:10;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+
+  /* Sticky bundle CTA bar */
+  .sticky-cta{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,#f5b83d 0%,#ffd97a 100%);color:#201500;border-bottom:1px solid rgba(0,0,0,.15);box-shadow:0 2px 12px rgba(0,0,0,.25)}
+  .sticky-cta .row{display:flex;align-items:center;justify-content:space-between;padding:9px 22px;gap:14px;flex-wrap:wrap}
+  .sticky-cta .left{display:flex;align-items:center;gap:12px;font-size:.88rem;flex-wrap:wrap}
+  .sticky-cta .tag{background:rgba(0,0,0,.18);padding:3px 9px;border-radius:999px;font-weight:800;letter-spacing:.5px;font-size:.72rem}
+  .sticky-cta .msg{font-weight:700;font-size:.9rem}
+  .sticky-cta .msg b{font-weight:900}
+  .sticky-cta .btn-cta{background:#201500;color:#f5b83d;padding:8px 16px;border-radius:9px;font-weight:800;font-size:.85rem;text-decoration:none;white-space:nowrap;transition:transform .15s,box-shadow .15s}
+  .sticky-cta .btn-cta:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.3)}
+
+  header{position:sticky;top:42px;z-index:20;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
   .brand{font-weight:800;letter-spacing:.4px;font-size:1.05rem}
   .brand span{color:var(--acc)}
   .nav a.pill{border:1px solid var(--line);padding:7px 14px;border-radius:999px;font-size:.85rem;color:var(--txt);transition:.2s}
   .nav a.pill:hover{border-color:var(--acc);color:var(--acc)}
+
   .hero{padding:84px 0 56px;text-align:center;background:
     radial-gradient(900px 380px at 50% -80px, rgba(245,184,61,.14), transparent 70%)}
   .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.5px}
@@ -29,17 +102,22 @@
   .stats{display:flex;gap:34px;justify-content:center;margin-top:34px;flex-wrap:wrap}
   .stat b{display:block;font-size:1.5rem;color:var(--acc)}
   .stat span{font-size:.82rem;color:var(--mut)}
-  section.cat{margin-top:44px}
+
+  section.cat{margin-top:44px;scroll-margin-top:120px}
   .cat h2{font-size:1.25rem;font-weight:700;border-left:4px solid var(--acc);padding-left:12px;margin-bottom:18px}
   .cat h2 small{color:var(--mut);font-weight:400;margin-left:8px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
-  .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:transform .18s ease,border-color .18s ease}
+
+  .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:transform .18s ease,border-color .18s ease,opacity .2s}
   .card:hover{transform:translateY(-3px);border-color:var(--acc)}
-  .card .top{display:flex;align-items:center;justify-content:space-between}
+  .card.hide{display:none}
+  .card .top{display:flex;align-items:center;justify-content:space-between;gap:6px}
   .card .ico{font-size:1.5rem}
-  .badge{font-size:.68rem;font-weight:700;letter-spacing:.5px;padding:4px 9px;border-radius:999px;text-transform:uppercase}
+  .badge{font-size:.68rem;font-weight:700;letter-spacing:.5px;padding:4px 9px;border-radius:999px;text-transform:uppercase;white-space:nowrap}
   .b-live{background:rgba(52,211,153,.14);color:var(--good)}
   .b-buy{background:rgba(245,184,61,.16);color:var(--acc)}
+  .b-free{background:rgba(96,165,250,.16);color:#60a5fa}
+  .b-flagship{background:linear-gradient(135deg,#f5b83d,#ffd97a);color:#201500;display:inline-flex;align-items:center;gap:3px}
   .card h3{font-size:1.02rem;font-weight:700}
   .card p{color:var(--mut);font-size:.86rem;flex:1}
   .card .btns{display:flex;gap:8px;margin-top:4px}
@@ -47,13 +125,68 @@
   .btn:hover{border-color:var(--acc);color:var(--acc)}
   .btn.buy{background:var(--acc);color:#201500;border-color:var(--acc)}
   .btn.buy:hover{background:var(--acc2);color:#201500}
+
+  /* Filter / search / sort bar */
+  .filter-bar{margin:48px 0 0;padding:22px 22px 18px;background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px}
+  .filter-bar .row1{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .search-wrap{position:relative;flex:1;min-width:240px}
+  .search-wrap .icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);font-size:.95rem;opacity:.6;pointer-events:none}
+  #searchInput{width:100%;padding:11px 38px 11px 38px;border:1px solid var(--line);border-radius:10px;background:#0b0f17;color:var(--txt);font-size:.92rem;font-family:inherit}
+  #searchInput:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(245,184,61,.12)}
+  .search-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:transparent;border:none;color:var(--mut);font-size:1.1rem;cursor:pointer;padding:4px 8px;border-radius:6px;line-height:1}
+  .search-clear:hover{color:var(--txt);background:rgba(255,255,255,.06)}
+  .sort-wrap{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--mut)}
+  .sort-wrap select{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#0b0f17;color:var(--txt);font-size:.88rem;font-family:inherit;cursor:pointer}
+  .sort-wrap select:focus{outline:none;border-color:var(--acc)}
+
+  .cat-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+  .cat-pills button{background:transparent;border:1px solid var(--line);color:var(--mut);padding:7px 13px;border-radius:999px;font-size:.82rem;font-weight:600;cursor:pointer;transition:.15s;font-family:inherit}
+  .cat-pills button:hover{border-color:var(--acc);color:var(--acc)}
+  .cat-pills button.active{background:var(--acc);color:#201500;border-color:var(--acc)}
+  .cat-pills .count{background:rgba(0,0,0,.2);padding:1px 7px;border-radius:999px;font-size:.72rem;margin-left:4px}
+
+  .results-meta{margin-top:12px;font-size:.82rem;color:var(--mut);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .results-meta b{color:var(--acc)}
+  .results-meta .clear-all{background:transparent;border:none;color:var(--acc2);cursor:pointer;font-size:.82rem;text-decoration:underline;padding:0;font-family:inherit}
+
   .soon{margin-top:52px;background:var(--bg2);border:1px dashed var(--line);border-radius:14px;padding:26px;text-align:center;color:var(--mut)}
+
+  /* Email capture */
+  .newsletter{margin:24px 0 0;padding:32px 28px;background:linear-gradient(135deg,#151d2e,#0b0f17);border:1px solid #24304a;border-radius:18px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .newsletter h3{font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:6px}
+  .newsletter p{color:#93a1b8;font-size:.88rem;margin:0}
+  .newsletter form{display:flex;gap:8px;flex:1;min-width:280px}
+  .newsletter input[type=email]{flex:1;padding:11px 14px;border:1px solid #24304a;border-radius:9px;background:#0b0f17;color:#e8edf6;font-size:.9rem;font-family:inherit}
+  .newsletter input[type=email]:focus{outline:none;border-color:#f5b83d}
+  .newsletter button{padding:11px 22px;background:#f5b83d;color:#201500;border:none;border-radius:9px;font-weight:700;font-size:.88rem;cursor:pointer;font-family:inherit;white-space:nowrap}
+  .newsletter button:hover{background:#ffd97a}
+  .newsletter .msg{color:#34d399;font-size:.85rem;margin-top:6px}
+
   footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 40px;text-align:center;color:var(--mut);font-size:.85rem}
   footer a{color:var(--acc2)}
-  @media(max-width:560px){.grid{grid-template-columns:1fr 1fr}.hero{padding:60px 0 40px}}
+
+  @media(max-width:560px){
+    .grid{grid-template-columns:1fr 1fr}
+    .hero{padding:60px 0 40px}
+    .sticky-cta .msg{font-size:.82rem}
+    .sticky-cta .btn-cta{padding:7px 12px;font-size:.8rem}
+    .cat-pills button{font-size:.78rem;padding:6px 11px}
+  }
 </style>
 </head>
 <body>
+
+<!-- STICKY BUNDLE CTA -->
+<div class="sticky-cta">
+  <div class="wrap row">
+    <div class="left">
+      <span class="tag">⭐ BUNDLE</span>
+      <span class="msg">All <b>28 Tools</b> · 1 Purchase · Save <b>$80+</b></span>
+    </div>
+    <a class="btn-cta" href="https://diverseinc.gumroad.com/l/diverse-bundle-2026" target="_blank" rel="noopener">Get Bundle — $297 →</a>
+  </div>
+</div>
+
 <header>
   <div class="wrap nav">
     <div class="brand">DIVERSE <span>INDUSTRIES</span> INC</div>
@@ -66,13 +199,32 @@
     <h1>Software &amp; AI Tools<br>Built for <em>Real Businesses</em></h1>
     <p>Practical, ready-to-run apps and blueprints — prompt studios, broker platforms, real-estate tools, guides and more. Every tool is live and free to explore.</p>
     <div class="stats">
-      <div class="stat"><b>24</b><span>Live Apps</span></div>
+      <div class="stat"><b>28</b><span>Live Apps</span></div>
       <div class="stat"><b>7</b><span>Categories</span></div>
       <div class="stat"><b>1</b><span>Free Download</span></div>
     </div>
   </section>
 
-  <!-- LEAD MAGNET: update href when Gumroad product is created -->
+  <!-- BUNDLE BANNER -->
+  <section style="margin:48px 0 0;background:linear-gradient(135deg,#1a1a2e 0%,#0A2540 50%,#0f3460 100%);border:2px solid #f5b83d;border-radius:18px;padding:36px 28px;text-align:center;position:relative;overflow:hidden">
+    <div style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(245,184,61,0.2) 0%,transparent 70%);pointer-events:none"></div>
+    <div style="display:inline-block;background:linear-gradient(135deg,#f5b83d,#ffd97a);color:#201500;font-size:.7rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:999px;margin-bottom:14px">⭐ Best Value — Save $80+</div>
+    <h3 style="font-size:1.6rem;font-weight:800;margin-bottom:8px;color:#fff">Diverse Industries Bundle — 28 AI Tools, One Purchase</h3>
+    <p style="color:#93a1b8;font-size:.95rem;max-width:580px;margin:0 auto 18px;line-height:1.6">The entire catalog in one download. DealFlow ($79) + DealIQ Pro ($79) + PromptForge Pro ($19) + 25 more apps. One-time payment, lifetime access, 30-day money-back guarantee.</p>
+    <div style="display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;margin-bottom:18px">
+      <div style="text-align:right">
+        <div style="color:#93a1b8;font-size:.78rem;text-decoration:line-through">$177 if bought separately</div>
+        <div style="color:#f5b83d;font-size:2rem;font-weight:900;line-height:1">$297</div>
+        <div style="color:#93a1b8;font-size:.72rem">one-time payment</div>
+      </div>
+      <a class="btn buy" href="https://diverseinc.gumroad.com/l/diverse-bundle-2026" target="_blank" rel="noopener" style="display:inline-block;padding:14px 36px;font-size:1.05rem;text-decoration:none;background:linear-gradient(135deg,#f5b83d,#ffd97a);color:#201500;font-weight:800;border-radius:10px;transition:transform .2s,box-shadow .2s">
+        Get the Bundle →
+      </a>
+    </div>
+    <div style="color:#64748b;font-size:.78rem;margin-top:8px">30-day money-back guarantee · Instant download · No subscription</div>
+  </section>
+
+  <!-- LEAD MAGNET -->
   <section style="margin:48px 0 0;background:linear-gradient(135deg,#0f2a1a,#111827);border:1px solid #24304a;border-radius:18px;padding:28px 24px;text-align:center">
     <div style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#34d399;margin-bottom:8px">Free Download</div>
     <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:8px">10 AI Prompts Every Real Estate Agent Needs</h3>
@@ -80,74 +232,314 @@
     <a class="btn buy" href="https://diverseinc.gumroad.com/l/10-ai-prompts-real-estate" target="_blank" rel="noopener" style="display:inline-block;padding:10px 28px;font-size:.95rem">Get the Free Prompts →</a>
   </section>
 
-  <section class="cat">
-    <h2>AI Tool Suite <small>10 apps</small></h2>
-    <div class="grid">
-      <div class="card"><div class="top"><span class="ico">⚒️</span><span class="badge b-buy">$19</span></div><h3>PromptForge Pro</h3><p>37-in-1 AI prompt creator — generate, refine and organize prompts for any use case.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/promptforge" target="_blank" rel="noopener">Open App</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/gujne" target="_blank" rel="noopener">Buy</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🧠</span><span class="badge b-live">LIVE</span></div><h3>RAG Command Center</h3><p>Retrieval-augmented generation control center for building knowledge-driven AI workflows.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/rag-command-center" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🎨</span><span class="badge b-live">LIVE</span></div><h3>OKF Studio</h3><p>Studio toolkit for creating and packaging AI output formats and frameworks.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/okf-studio" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🎓</span><span class="badge b-live">LIVE</span></div><h3>AI Prompt Teacher</h3><p>Learn prompt engineering step by step with interactive lessons and examples.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/ai-prompt-teacher" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🔌</span><span class="badge b-live">LIVE</span></div><h3>API Hub v5</h3><p>Curated hub of free and practical APIs with live testers and configuration helpers.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/api-hub-v5" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🖥️</span><span class="badge b-live">LIVE</span></div><h3>Diverse Studio Pro</h3><p>AI app business command center — plan, build and launch app ideas from one place.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/diverse-studio-pro" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🚀</span><span class="badge b-live">LIVE</span></div><h3>AppForge AI Pro</h3><p>Full-stack studio with free business assets — generate complete webapps in minutes.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/appforge-ai-pro" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🏗️</span><span class="badge b-live">LIVE</span></div><h3>AI Prompt Architect</h3><p>Full multilingual prompt architecture — design structured prompt systems in any language.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/ai-prompt-architect" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">✨</span><span class="badge b-live">LIVE</span></div><h3>AI Format Studio Pro</h3><p>One tool for every format — text, email, social, SMS, blog and CTA content.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/ai-format-studio-pro" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">💼</span><span class="badge b-live">LIVE</span></div><h3>AI Prompt Business Kit</h3><p>Ready-made prompt library for running and growing your business with AI.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/ai-prompt-business-kit" target="_blank" rel="noopener">Open App</a></div></div>
+  <!-- EMAIL CAPTURE -->
+  <section class="newsletter">
+    <div style="flex:1;min-width:240px">
+      <h3>📬 Get one new app in your inbox every month</h3>
+      <p>One email, one featured tool, no spam. Unsubscribe anytime.</p>
+    </div>
+    <form id="newsletterForm" action="https://buttondown.com/api/emails/embed-subscribe/diverseindustriesinc1" method="post">
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FILTER / SEARCH / SORT BAR -->
+  <section class="filter-bar" id="filterBar">
+    <div class="row1">
+      <div class="search-wrap">
+        <span class="icon">🔎</span>
+        <input type="text" id="searchInput" placeholder="Search 28 tools by name or keyword…" autocomplete="off" aria-label="Search the catalog">
+        <button type="button" id="clearSearch" class="search-clear" aria-label="Clear search" style="display:none">✕</button>
+      </div>
+      <div class="sort-wrap">
+        <label for="sortSelect">Sort:</label>
+        <select id="sortSelect" aria-label="Sort tools">
+          <option value="default">Featured</option>
+          <option value="name-asc">Name A–Z</option>
+          <option value="name-desc">Name Z–A</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="free-first">Free First</option>
+        </select>
+      </div>
+    </div>
+    <div class="cat-pills" id="catPills" role="tablist" aria-label="Filter by category">
+      <button type="button" class="active" data-cat="all" role="tab">All<span class="count">28</span></button>
+      <button type="button" data-cat="ai-tool-suite" role="tab">AI Tool Suite<span class="count">11</span></button>
+      <button type="button" data-cat="business-suite" role="tab">Business Suite<span class="count">8</span></button>
+      <button type="button" data-cat="real-estate" role="tab">Real Estate<span class="count">3</span></button>
+      <button type="button" data-cat="blueprints-guides" role="tab">Blueprints<span class="count">3</span></button>
+      <button type="button" data-cat="gaming" role="tab">Gaming<span class="count">1</span></button>
+      <button type="button" data-cat="kids-learning" role="tab">Kids<span class="count">1</span></button>
+      <button type="button" data-cat="financial-education" role="tab">Finance<span class="count">1</span></button>
+    </div>
+    <div class="results-meta">
+      <span id="resultCount">Showing <b>28</b> of <b>28</b> tools</span>
+      <span id="activeFilters" style="display:none"></span>
+      <button type="button" id="resetAll" class="clear-all" style="display:none">Reset filters</button>
+      <span id="noResults" style="display:none;color:var(--bad)">No matches — try a different search.</span>
     </div>
   </section>
 
-  <section class="cat">
+  <section class="cat" id="cat-ai-tool-suite" data-cat="ai-tool-suite">
+    <h2>AI Tool Suite <small>11 apps</small></h2>
+    <div class="grid">
+      <div class="card" data-name="PromptForge Pro" data-price="19" data-keywords="prompt forge ai creator generator writer content" data-flagship="1"><div class="top"><span class="ico">⚒️</span><span><span class="badge b-flagship">⭐ Flagship</span> <span class="badge b-buy">$19</span></span></div><h3>PromptForge Pro</h3><p>37-in-1 AI prompt creator — generate, refine and organize prompts for any use case.</p><div class="btns"><a class="btn" href="https://promptforge-seven-navy.vercel.app" target="_blank" rel="noopener">Open App</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/gujne" target="_blank" rel="noopener">Buy</a></div></div>
+      <div class="card" data-name="Standalone Apps Dashboard" data-price="0" data-keywords="standalone apps dashboard hub launcher organizer workspace"><div class="top"><span class="ico">🗂️</span><span class="badge b-live">FREE</span></div><h3>Standalone Apps Dashboard</h3><p>Central hub for launching and managing all standalone apps in one organized workspace.</p><div class="btns"><a class="btn" href="https://standalone-dashboard.diverseindustriesinc.com" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="RAG Command Center" data-price="0" data-keywords="rag retrieval augmented generation command center knowledge vector"><div class="top"><span class="ico">🧠</span><span class="badge b-live">FREE</span></div><h3>RAG Command Center</h3><p>Retrieval-augmented generation control center for building knowledge-driven AI workflows.</p><div class="btns"><a class="btn" href="https://rag-command-center.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="OKF Studio" data-price="0" data-keywords="okf studio format framework output packaging"><div class="top"><span class="ico">🎨</span><span class="badge b-live">FREE</span></div><h3>OKF Studio</h3><p>Studio toolkit for creating and packaging AI output formats and frameworks.</p><div class="btns"><a class="btn" href="https://okf-studio.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="AI Prompt Teacher" data-price="0" data-keywords="ai prompt teacher learn lesson course education tutorial"><div class="top"><span class="ico">🎓</span><span class="badge b-live">FREE</span></div><h3>AI Prompt Teacher</h3><p>Learn prompt engineering step by step with interactive lessons and examples.</p><div class="btns"><a class="btn" href="https://ai-prompt-teacher.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="API Hub v5" data-price="0" data-keywords="api hub v5 developer integration tester"><div class="top"><span class="ico">🔌</span><span class="badge b-live">FREE</span></div><h3>API Hub v5</h3><p>Curated hub of free and practical APIs with live testers and configuration helpers.</p><div class="btns"><a class="btn" href="https://api-hub-v5.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Diverse Studio Pro" data-price="0" data-keywords="diverse studio pro business command center plan build launch"><div class="top"><span class="ico">🖥️</span><span class="badge b-live">FREE</span></div><h3>Diverse Studio Pro</h3><p>AI app business command center — plan, build and launch app ideas from one place.</p><div class="btns"><a class="btn" href="https://diverse-studio-pro.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="AppForge AI Pro" data-price="0" data-keywords="appforge ai pro full stack webapp builder studio"><div class="top"><span class="ico">🚀</span><span class="badge b-live">FREE</span></div><h3>AppForge AI Pro</h3><p>Full-stack studio with free business assets — generate complete webapps in minutes.</p><div class="btns"><a class="btn" href="https://appforge-ai-pro.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="AI Prompt Architect" data-price="0" data-keywords="ai prompt architect multilingual structured system design"><div class="top"><span class="ico">🏗️</span><span class="badge b-live">FREE</span></div><h3>AI Prompt Architect</h3><p>Full multilingual prompt architecture — design structured prompt systems in any language.</p><div class="btns"><a class="btn" href="https://ai-prompt-architect-clean.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="AI Format Studio Pro" data-price="0" data-keywords="ai format studio pro text email social sms blog cta content"><div class="top"><span class="ico">✨</span><span class="badge b-live">FREE</span></div><h3>AI Format Studio Pro</h3><p>One tool for every format — text, email, social, SMS, blog and CTA content.</p><div class="btns"><a class="btn" href="https://ai-format-studio-pro.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="AI Prompt Business Kit" data-price="0" data-keywords="ai prompt business kit ready made library marketing operations"><div class="top"><span class="ico">💼</span><span class="badge b-live">FREE</span></div><h3>AI Prompt Business Kit</h3><p>Ready-made prompt library for running and growing your business with AI.</p><div class="btns"><a class="btn" href="https://ai-prompt-business-kit.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+    </div>
+  </section>
+
+  <section class="cat" id="cat-business-suite" data-cat="business-suite">
     <h2>Business Suite <small>8 apps</small></h2>
     <div class="grid">
-      <div class="card"><div class="top"><span class="ico">🤝</span><span class="badge b-live">LIVE</span></div><h3>DualBroker CRM</h3><p>Client relationship management built for dual-role brokers and agents.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/dualbroker-crm" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">📊</span><span class="badge b-buy">$79</span></div><h3>DealFlow</h3><p>All-in-one dealflow, pipeline, commission tracking, and AI insights for real estate and mortgage pros.</p><div class="btns"><a class="btn" href="https://dealflow-landing-three.vercel.app" target="_blank" rel="noopener">See Pricing</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/havcng" target="_blank" rel="noopener">Buy</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🏢</span><span class="badge b-live">LIVE</span></div><h3>All-in-One Broker Platform</h3><p>Complete broker operating platform — leads, pipelines, tools and reporting.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/all-in-one-broker-platform" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">📦</span><span class="badge b-live">LIVE</span></div><h3>White-Label Broker Platform</h3><p>Rebrand-ready broker platform — deploy it under your own name and sell it.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/white-label-broker-platform" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">📈</span><span class="badge b-live">LIVE</span></div><h3>Follow-Up Mastery</h3><p>Dual-broker follow-up system — turn missed leads into closed deals.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/follow-up-mastery" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🏠</span><span class="badge b-live">LIVE</span></div><h3>Equity Access Suite</h3><p>HELOC and home-equity tools for homeowners and lenders.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/equity-access-suite" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">📚</span><span class="badge b-live">LIVE</span></div><h3>My Business AI Toolkit</h3><p>Complete AI library for day-to-day business operations and marketing.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/my-business-ai-toolkit" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">📱</span><span class="badge b-live">LIVE</span></div><h3>10DLC Register AI</h3><p>Register your 10DLC and keep business SMS running — for any business.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/10dlc-register-ai" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="DualBroker CRM" data-price="0" data-keywords="dualbroker crm client relationship management dual role broker agent"><div class="top"><span class="ico">🤝</span><span class="badge b-live">FREE</span></div><h3>DualBroker CRM</h3><p>Client relationship management built for dual-role brokers and agents.</p><div class="btns"><a class="btn" href="https://dualbroker-crm.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="DealFlow" data-price="79" data-keywords="dealflow deal pipeline commission tracking ai insights real estate mortgage crm" data-flagship="1"><div class="top"><span class="ico">📊</span><span><span class="badge b-flagship">⭐ Flagship</span> <span class="badge b-buy">$79</span></span></div><h3>DealFlow</h3><p>All-in-one dealflow, pipeline, commission tracking, and AI insights for real estate and mortgage pros.</p><div class="btns"><a class="btn" href="https://dealflow-sales.vercel.app" target="_blank" rel="noopener">Open App</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/havcng" target="_blank" rel="noopener">Buy</a></div></div>
+      <div class="card" data-name="All-in-One Broker Platform" data-price="0" data-keywords="all in one broker platform leads pipeline tools reporting"><div class="top"><span class="ico">🏢</span><span class="badge b-live">FREE</span></div><h3>All-in-One Broker Platform</h3><p>Complete broker operating platform — leads, pipelines, tools and reporting.</p><div class="btns"><a class="btn" href="https://all-in-one-broker-platform.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="White-Label Broker Platform" data-price="0" data-keywords="white label broker platform rebrand resell customize own brand"><div class="top"><span class="ico">📦</span><span class="badge b-live">FREE</span></div><h3>White-Label Broker Platform</h3><p>Rebrand-ready broker platform — deploy it under your own name and sell it.</p><div class="btns"><a class="btn" href="https://white-label-broker-platform.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Follow-Up Mastery" data-price="0" data-keywords="follow up mastery dual broker missed leads closed deals"><div class="top"><span class="ico">📈</span><span class="badge b-live">FREE</span></div><h3>Follow-Up Mastery</h3><p>Dual-broker follow-up system — turn missed leads into closed deals.</p><div class="btns"><a class="btn" href="https://follow-up-mastery.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Equity Access Suite" data-price="0" data-keywords="equity access suite heloc home equity lender"><div class="top"><span class="ico">🏠</span><span class="badge b-live">FREE</span></div><h3>Equity Access Suite</h3><p>HELOC and home-equity tools for homeowners and lenders.</p><div class="btns"><a class="btn" href="https://equity-access-suite.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="My Business AI Toolkit" data-price="0" data-keywords="my business ai toolkit library operations marketing day-to-day"><div class="top"><span class="ico">📚</span><span class="badge b-live">FREE</span></div><h3>My Business AI Toolkit</h3><p>Complete AI library for day-to-day business operations and marketing.</p><div class="btns"><a class="btn" href="https://my-business-ai-toolkit.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="10DLC Register AI" data-price="0" data-keywords="10dlc register ai sms business texting compliance"><div class="top"><span class="ico">📱</span><span class="badge b-live">FREE</span></div><h3>10DLC Register AI</h3><p>Register your 10DLC and keep business SMS running — for any business.</p><div class="btns"><a class="btn" href="https://10dlc-register-ai.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
     </div>
   </section>
 
-  <section class="cat">
-    <h2>Real Estate <small>2 apps</small></h2>
+  <section class="cat" id="cat-real-estate" data-cat="real-estate">
+    <h2>Real Estate <small>3 apps</small></h2>
     <div class="grid">
-      <div class="card"><div class="top"><span class="ico">🏘️</span><span class="badge b-buy">$79</span></div><h3>DealIQ Pro</h3><p>All-in-one real estate deal platform — analysis, comps, outreach and pipeline in one suite.</p><div class="btns"><a class="btn" href="https://dealiq-allinone-cxo7.vercel.app" target="_blank" rel="noopener">Open App</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/askpn" target="_blank" rel="noopener">Buy</a></div></div>
-      <div class="card"><div class="top"><span class="ico">📈</span><span class="badge b-live">LIVE</span></div><h3>InvestorPro</h3><p>Real estate investment platform — calculators, deal scoring, ARV, BRRRR, cap rate, cash-on-cash, wholesale tools and more.</p><div class="btns"><a class="btn" href="https://investorpro-rho.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="DealIQ Pro" data-price="79" data-keywords="dealiq pro real estate deal analysis comps outreach pipeline broker" data-flagship="1"><div class="top"><span class="ico">🏘️</span><span><span class="badge b-flagship">⭐ Flagship</span> <span class="badge b-buy">$79</span></span></div><h3>DealIQ Pro</h3><p>All-in-one real estate deal platform — analysis, comps, outreach and pipeline in one suite.</p><div class="btns"><a class="btn" href="https://dealiq-allinone-clean.vercel.app" target="_blank" rel="noopener">Open App</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/askpn" target="_blank" rel="noopener">Buy</a></div></div>
+      <div class="card" data-name="InvestorPro" data-price="0" data-keywords="investorpro real estate investment calculator arv brrrr cap rate cash wholesale"><div class="top"><span class="ico">📈</span><span class="badge b-live">FREE</span></div><h3>InvestorPro</h3><p>Real estate investment platform — calculators, deal scoring, ARV, BRRRR, cap rate, cash-on-cash, wholesale tools and more.</p><div class="btns"><a class="btn" href="https://investorpro.diverseindustriesinc.com" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="CloseConnect" data-price="29" data-keywords="closeconnect white label client portal template real estate mortgage consultant" data-flagship="1"><div class="top"><span class="ico">🤝</span><span><span class="badge b-flagship">⭐ Flagship</span> <span class="badge b-buy">$29</span></span></div><h3>CloseConnect</h3><p>White-label client portal template for real estate agents, mortgage brokers, and consultants. Professional, responsive, ready to customize.</p><div class="btns"><a class="btn" href="https://closeconnect.vercel.app" target="_blank" rel="noopener">Open App</a><a class="btn buy" href="https://diverseinc.gumroad.com/l/knunu" target="_blank" rel="noopener">Buy</a></div></div>
     </div>
   </section>
 
-  <section class="cat">
-    <h2>Blueprints &amp; Guides <small>2 apps</small></h2>
+  <section class="cat" id="cat-blueprints-guides" data-cat="blueprints-guides">
+    <h2>Blueprints &amp; Guides <small>3 apps</small></h2>
     <div class="grid">
-      <div class="card"><div class="top"><span class="ico">📘</span><span class="badge b-live">LIVE</span></div><h3>Pest Control Blueprint v9</h3><p>Complete pest-control business blueprint with guides and launch materials.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/pest-control-blueprint" target="_blank" rel="noopener">Open App</a></div></div>
-      <div class="card"><div class="top"><span class="ico">🔧</span><span class="badge b-live">LIVE</span></div><h3>AI Mechanic</h3><p>Automotive diagnostic prompt library — expert repair guidance with AI prompts.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/ai-mechanic" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Pest Control Blueprint v9" data-price="0" data-keywords="pest control blueprint v9 business launch guide"><div class="top"><span class="ico">📘</span><span class="badge b-live">FREE</span></div><h3>Pest Control Blueprint v9</h3><p>Complete pest-control business blueprint with guides and launch materials.</p><div class="btns"><a class="btn" href="https://pest-control-blueprint.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="AI Mechanic" data-price="0" data-keywords="ai mechanic automotive diagnostic repair prompt library"><div class="top"><span class="ico">🔧</span><span class="badge b-live">FREE</span></div><h3>AI Mechanic</h3><p>Automotive diagnostic prompt library — expert repair guidance with AI prompts.</p><div class="btns"><a class="btn" href="https://ai-mechanic-clean.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Open-Source AI Blueprint" data-price="0" data-keywords="open source ai blueprint stack models tools prompts workflows free"><div class="top"><span class="ico">🛠️</span><span class="badge b-free">FREE</span></div><h3>Open-Source AI Blueprint</h3><p>Complete open-source AI stack blueprint — models, tools, prompts and workflows. Free to use, no signup.</p><div class="btns"><a class="btn" href="https://open-source-ai-blueprint.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
     </div>
   </section>
 
-  <section class="cat">
+  <section class="cat" id="cat-gaming" data-cat="gaming">
     <h2>Gaming <small>1 app</small></h2>
     <div class="grid">
-      <div class="card"><div class="top"><span class="ico">🃏</span><span class="badge b-live">LIVE</span></div><h3>Poker GTO Blueprint</h3><p>Game-theory-optimal poker study blueprint with AI prompt generators.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/poker-gto-blueprint" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Poker GTO Blueprint" data-price="0" data-keywords="poker gto blueprint game theory optimal study prompt"><div class="top"><span class="ico">🃏</span><span class="badge b-live">FREE</span></div><h3>Poker GTO Blueprint</h3><p>Game-theory-optimal poker study blueprint with AI prompt generators.</p><div class="btns"><a class="btn" href="https://poker-gto-blueprint.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
     </div>
   </section>
 
-  <section class="cat">
+  <section class="cat" id="cat-kids-learning" data-cat="kids-learning">
     <h2>Kids &amp; Learning <small>1 app</small></h2>
     <div class="grid">
-      <div class="card"><div class="top"><span class="ico">🧒</span><span class="badge b-live">LIVE</span></div><h3>Kids AI Hub</h3><p>Play, imagine and learn — a safe, fun AI playground built for kids.</p><div class="btns"><a class="btn" href="https://diverseinc.github.io/kids-ai-hub" target="_blank" rel="noopener">Open App</a></div></div>
+      <div class="card" data-name="Kids AI Hub" data-price="0" data-keywords="kids ai hub play imagine learn safe fun playground children"><div class="top"><span class="ico">🧒</span><span class="badge b-live">FREE</span></div><h3>Kids AI Hub</h3><p>Play, imagine and learn — a safe, fun AI playground built for kids.</p><div class="btns"><a class="btn" href="https://kids-ai-hub.vercel.app" target="_blank" rel="noopener">Open App</a></div></div>
     </div>
   </section>
 
-  <section class="cat">
+  <section class="cat" id="cat-financial-education" data-cat="financial-education">
     <h2>Financial Education <small>1 app</small></h2>
     <div class="grid">
-      <div class="card"><div class="top"><span class="ico">📖</span><span class="badge b-live">LIVE</span></div><h3>Financial Education Hub</h3><p>Courses, templates and tools for financial literacy — from UCC filings to debt validation.</p><div class="btns"><a class="btn" href="https://webapp-eta-brown-18.vercel.app" target="_blank" rel="noopener">Open Hub</a></div></div>
+      <div class="card" data-name="Financial Education Hub" data-price="0" data-keywords="financial education hub courses templates ucc filings debt validation literacy"><div class="top"><span class="ico">📖</span><span class="badge b-live">FREE</span></div><h3>Financial Education Hub</h3><p>Courses, templates and tools for financial literacy — from UCC filings to debt validation.</p><div class="btns"><a class="btn" href="https://financial-education-hub.diverseindustriesinc.com" target="_blank" rel="noopener">Open Hub</a></div></div>
     </div>
   </section>
 
   <div class="soon">🚧 More tools shipping soon — the financial &amp; legal suite, real-estate platform, investor tools and more are in the pipeline.</div>
+
+  <script>
+    // ---------- Newsletter form (Buttondown) ----------
+    (function() {
+      var f = document.getElementById('newsletterForm');
+      if (!f) return;
+      f.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var btn = f.querySelector('button');
+        var orig = btn.textContent;
+        btn.textContent = 'Subscribing…';
+        btn.disabled = true;
+        try {
+          var data = new FormData(f);
+          await fetch(f.action, { method: 'POST', body: data, mode: 'no-cors' });
+          f.innerHTML = '<div class="msg">✅ Subscribed! Check your inbox for confirmation.</div>';
+        } catch (err) {
+          btn.textContent = orig;
+          btn.disabled = false;
+          f.insertAdjacentHTML('beforeend', '<div class="msg" style="color:#e53e3e">Something went wrong. Email us at support@diverseinc.net</div>');
+        }
+      });
+    })();
+
+    // ---------- Search / filter / sort ----------
+    (function() {
+      var searchInput = document.getElementById('searchInput');
+      var clearBtn = document.getElementById('clearSearch');
+      var sortSelect = document.getElementById('sortSelect');
+      var catPills = document.getElementById('catPills');
+      var resultCount = document.getElementById('resultCount');
+      var activeFiltersEl = document.getElementById('activeFilters');
+      var noResults = document.getElementById('noResults');
+      var resetBtn = document.getElementById('resetAll');
+      var sections = document.querySelectorAll('section.cat');
+      var allCards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+
+      var state = { q: '', cat: 'all', sort: 'default' };
+
+      function apply() {
+        var q = state.q.trim().toLowerCase();
+        var visible = 0;
+        sections.forEach(function(sec) {
+          var secCat = sec.getAttribute('data-cat');
+          var cards = sec.querySelectorAll('.card');
+          var sectionHasMatch = false;
+          cards.forEach(function(card) {
+            var name = (card.getAttribute('data-name') || '').toLowerCase();
+            var kw = (card.getAttribute('data-keywords') || '').toLowerCase();
+            var matchSearch = !q || name.indexOf(q) !== -1 || kw.indexOf(q) !== -1;
+            var matchCat = state.cat === 'all' || secCat === state.cat;
+            if (matchSearch && matchCat) {
+              card.classList.remove('hide');
+              sectionHasMatch = true;
+              visible++;
+            } else {
+              card.classList.add('hide');
+            }
+          });
+          // Hide section entirely if no matching cards (and a filter is active)
+          if (sectionHasMatch) {
+            sec.style.display = '';
+          } else {
+            sec.style.display = 'none';
+          }
+        });
+
+        // Sort within each visible section
+        sortSections();
+
+        // Update meta line
+        resultCount.innerHTML = 'Showing <b>' + visible + '</b> of <b>' + allCards.length + '</b> tools';
+
+        var anyFilter = q || state.cat !== 'all' || state.sort !== 'default';
+        if (anyFilter) {
+          resetBtn.style.display = '';
+          var parts = [];
+          if (q) parts.push('Search: "' + state.q + '"');
+          if (state.cat !== 'all') parts.push('Category: ' + getCatLabel(state.cat));
+          if (state.sort !== 'default') parts.push('Sort: ' + getSortLabel(state.sort));
+          activeFiltersEl.textContent = ' · ' + parts.join(' · ');
+          activeFiltersEl.style.display = '';
+        } else {
+          resetBtn.style.display = 'none';
+          activeFiltersEl.style.display = 'none';
+          activeFiltersEl.textContent = '';
+        }
+
+        noResults.style.display = (visible === 0) ? '' : 'none';
+      }
+
+      function sortSections() {
+        sections.forEach(function(sec) {
+          if (sec.style.display === 'none') return;
+          var grid = sec.querySelector('.grid');
+          if (!grid) return;
+          var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+          cards.sort(function(a, b) {
+            if (state.sort === 'default') {
+              // Featured first, then keep DOM order
+              var af = a.getAttribute('data-flagship') === '1' ? 0 : 1;
+              var bf = b.getAttribute('data-flagship') === '1' ? 0 : 1;
+              if (af !== bf) return af - bf;
+              return 0;
+            }
+            if (state.sort === 'name-asc') return (a.getAttribute('data-name') || '').localeCompare(b.getAttribute('data-name') || '');
+            if (state.sort === 'name-desc') return (b.getAttribute('data-name') || '').localeCompare(a.getAttribute('data-name') || '');
+            if (state.sort === 'price-asc') return Number(a.getAttribute('data-price') || 0) - Number(b.getAttribute('data-price') || 0);
+            if (state.sort === 'price-desc') return Number(b.getAttribute('data-price') || 0) - Number(a.getAttribute('data-price') || 0);
+            if (state.sort === 'free-first') {
+              var ap = Number(a.getAttribute('data-price') || 0);
+              var bp = Number(b.getAttribute('data-price') || 0);
+              if (ap === 0 && bp !== 0) return -1;
+              if (ap !== 0 && bp === 0) return 1;
+              return (a.getAttribute('data-name') || '').localeCompare(b.getAttribute('data-name') || '');
+            }
+            return 0;
+          });
+          cards.forEach(function(c) { grid.appendChild(c); });
+        });
+      }
+
+      function getCatLabel(slug) {
+        var btn = catPills.querySelector('[data-cat="' + slug + '"]');
+        return btn ? btn.textContent.replace(/\s+\d+$/, '').trim() : slug;
+      }
+      function getSortLabel(val) {
+        return ({ 'name-asc':'Name A–Z', 'name-desc':'Name Z–A', 'price-asc':'Low→High', 'price-desc':'High→Low', 'free-first':'Free first' })[val] || val;
+      }
+
+      // Search input
+      searchInput.addEventListener('input', function(e) {
+        state.q = e.target.value;
+        clearBtn.style.display = state.q ? '' : 'none';
+        apply();
+      });
+      clearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        state.q = '';
+        clearBtn.style.display = 'none';
+        searchInput.focus();
+        apply();
+      });
+
+      // Category pills
+      catPills.addEventListener('click', function(e) {
+        var btn = e.target.closest('button[data-cat]');
+        if (!btn) return;
+        var cat = btn.getAttribute('data-cat');
+        if (cat === state.cat) {
+          // Same pill clicked — toggle back to All
+          state.cat = 'all';
+          catPills.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
+          catPills.querySelector('[data-cat="all"]').classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          state.cat = cat;
+          catPills.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
+          btn.classList.add('active');
+          var target = document.getElementById('cat-' + cat);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        apply();
+      });
+
+      // Sort
+      sortSelect.addEventListener('change', function(e) {
+        state.sort = e.target.value;
+        apply();
+      });
+
+      // Reset all
+      resetBtn.addEventListener('click', function() {
+        state.q = ''; state.cat = 'all'; state.sort = 'default';
+        searchInput.value = '';
+        sortSelect.value = 'default';
+        catPills.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
+        catPills.querySelector('[data-cat="all"]').classList.add('active');
+        clearBtn.style.display = 'none';
+        apply();
+        window.scrollTo({ top: document.getElementById('filterBar').offsetTop - 80, behavior: 'smooth' });
+      });
+
+      // Initial apply (sort "default" -> flagship first within each section)
+      apply();
+    })();
+  </script>
 </main>
 
 <footer>
